@@ -28,7 +28,7 @@ public class SeleniumBasic_Methods {
 		driver.get("https://demoqa.com/text-box");
 		String actTitle = driver.getTitle();
 		System.out.println("Title of the webapge is " + actTitle);
-		WebElement txtbox = driver.findElement(By.xpath("//input[@id='bjsgdksad']"));
+		WebElement txtbox = driver.findElement(By.xpath("//input[@id='userName']"));
 		Thread.sleep(2000);
 		txtbox.sendKeys("Ganesh Nagnath Kanchi");
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
